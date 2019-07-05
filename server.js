@@ -8,15 +8,19 @@ app.get('/', function(request, response) {
 });
 
 io.on('connection', function(socket) {
-    socket.on('connection', function(socket) {
+    socket.on('connect', function(socket) {
         console.log('a user connected');
     });
 
     socket.on('chat message', function(msg) {
         io.emit('chat message', msg);
     });
+
+    socket.on('disconnect', function() {
+        console.log('user disconnected');
+    });
 });
 
 http.listen(port, function() {
-    console.log('listening on *:' + port);
+    console.log('Listening on localhost:' + port);
 });
