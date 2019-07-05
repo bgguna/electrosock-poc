@@ -1,6 +1,6 @@
 # Electron Socket.io POC
 
-This is a proof of concept of using electron, express and socket.io.
+This is a proof of concept of a client-server messaging system using electron, express and socket.io.
 
 ## Getting Started
 
