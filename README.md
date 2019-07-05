@@ -36,3 +36,8 @@ npm start
 # you can now start sending messages from one client to the others
 # the server will broadcast the messages using sockets
 ```
+
+## Resources
+* [Node.js](https://nodejs.org/)
+* [Writing Your First Electron App](https://electronjs.org/docs/tutorial/first-app)
+* [Socket.io Chat](https://socket.io/get-started/chat)
